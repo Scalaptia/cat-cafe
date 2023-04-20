@@ -1,6 +1,6 @@
-import '../style.css';
-import '../style/navbar.css';
-import NavBar from './navbar';
+import '../style/style.css';
+import { NavBar } from './navbar';
+import { HamburgerNavbar } from './navbar';
 import Hero from './hero';
 
 export default function pageLoad() {
@@ -8,6 +8,7 @@ export default function pageLoad() {
     
     if (content !== null) {
         content.appendChild(NavBar());
+        content.appendChild(HamburgerNavbar());
         content.appendChild(Hero());
     }
 }
