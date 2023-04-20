@@ -1,0 +1,39 @@
+.hero-container {
+    display: grid;
+    background-image: url(../assets/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+
+}
+
+
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
+
+    .logo {
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .hero-container {
+        padding-top: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        justify-self: center;
+        width: 80vw; 
+     }
+}

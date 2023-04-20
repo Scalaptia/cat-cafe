@@ -6,6 +6,11 @@ ul {
     gap: 3rem;
 }
 
+.nav-container {
+    position: fixed;
+    width: 100%;
+}
+
 .navbar {
     background-color: var(--primary-color);
     height: 4rem;
@@ -58,7 +63,7 @@ ul {
     height: 35vh;
     padding-top: 4rem;
     gap: 0;
-    background-color: hsla(0, 0%, 7%, 0.5);
+    background-color: hsla(0, 0%, 7%, 0.9);
     translate: -110% -3%;
     transition: all 0.3s ease-in-out;
 }
@@ -81,7 +86,7 @@ ul {
 }
 
 .hamburger-menu > ul > li:hover {
-    background-color: hsla(0, 0%, 7%, 0.7);
+    background-color: hsla(0, 0%, 7%, 0.95);
     color: #ffffff;
 }
 
@@ -91,27 +96,15 @@ ul {
     opacity: 100;
 }
 
-
 /* Desktop */
 @media only screen and (min-width: 769px) {
     .hamburger-menu {
         display: none;
     }
 }
-/* Tablet */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-    .nav-container {
-        display: flex;
-        align-items: center;
-    }
 
-    .navbar {
-        display: none;
-    }
-}
-  
 /* Mobile */
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 768px) {
     .nav-container {
         display: flex;
         align-items: center;

@@ -2,8 +2,9 @@
   "compilerOptions": {
     "target": "es6",
     "module": "es6",
-    "strict": true
+    "strict": true,
+    "moduleResolution": "nodenext"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/*.d.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
