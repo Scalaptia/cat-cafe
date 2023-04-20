@@ -6,10 +6,12 @@ export default function Hero() {
     hero.classList.add('hero-container')
 
     const logoImage = new Image();
-    logoImage.src = Logo
-    logoImage.classList.add('logo')
-
+    logoImage.src = Logo;
+    logoImage.classList.add('logo');
     hero.appendChild(logoImage);
+
+    const heroText = document.createElement('div');
+    heroText
     
     return hero
 }
