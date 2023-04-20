@@ -1,3 +1,3 @@
-import './style.css';
+import pageLoad from "./modules/pageLoad";
 
-console.log('HELLO WEBPACK');
+pageLoad();
