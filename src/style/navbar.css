@@ -93,6 +93,7 @@ ul {
 .hamburger-menu > ul.shown {
     pointer-events: all;
     translate: calc(0% - 0.5rem) -3%;
+    z-index: 1;
     opacity: 100;
 }
 
@@ -113,5 +114,4 @@ ul {
     .navbar {
         display: none;
     }
-
 }
