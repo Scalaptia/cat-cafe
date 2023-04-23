@@ -1,5 +1,7 @@
-import Logo from '../assets/logo.jpg';
+import Logo from '../assets/logo.png';
 import '../style/home.css';
+import pageLoad from './pageLoad';
+import Menu from './menu';
 
 
 export default function Hero() {
@@ -27,6 +29,21 @@ export default function Hero() {
         heroText.innerText = 'Escape to a world of purrs and relaxation at our cat cafe.';
         heroRight.appendChild(heroText);
     
+        const heroCTA = document.createElement('div');
+        heroCTA.classList.add('hero-cta');
+
+            const menuBtn = document.createElement('button');
+            menuBtn.classList.add('menu-btn');
+            menuBtn.innerText = 'Explore our menu'
+            menuBtn.addEventListener('click', () => {pageLoad(Menu())})
+            heroCTA.appendChild(menuBtn);
+
+            const igBtn = document.createElement('button');
+            igBtn.classList.add('ig-btn');
+            heroCTA.appendChild(igBtn);
+
+            heroRight.appendChild(heroCTA)
+
         container.appendChild(heroLeft);
         container.appendChild(heroRight);
 

@@ -1,35 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .hero-left, .hero-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.hero-text {
-    text-align: center;
+.hero-title {
+    font-family: 'Pacifico', cursive;
     font-weight: 500;
 }
 
+.hero-text {
+    font-weight: 400;
+    padding: 0 20px;
+
+}
+
+.logo {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.hero-cta {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-btn, .ig-btn {
+    background-color: #d8c0ad;
+    font-weight: 600;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-btn:hover, .ig-btn:hover {
+    background-color: #c9b3a1;
+}
+
+.ig-btn {
+    background-image: url(../assets/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
 
 /* Desktop */
 @media only screen and (min-width: 769px) {
     .home-container {
-        grid-template-columns: 1fr 1fr;
-        height: 100vh;
+        grid-template-columns: 1fr 2fr;
     }
 
     .logo {
-        width: 80%;
+        width: 180%;
+    }
+
+    .hero-left {
+        padding-left: 180px;
+    }
+
+    .hero-right{
+        padding: 80px;
     }
 }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
     .home-container {
+        align-items: start;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
     }
 
     .logo {
+        padding-top: 50px;
         width: 80vw; 
-     }
+    }
+
+    .hero-right{
+        padding-top: 50px;
+    }
 }
