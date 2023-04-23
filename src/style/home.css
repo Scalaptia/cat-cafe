@@ -1,13 +1,3 @@
-.hero-container {
-    padding-top: 2rem;
-    display: grid;
-    background-image: url(../assets/hero-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-items: center;
-}
-
 .hero-left, .hero-right {
     display: flex;
     flex-direction: column;
@@ -23,7 +13,7 @@
 
 /* Desktop */
 @media only screen and (min-width: 769px) {
-    .hero-container {
+    .home-container {
         grid-template-columns: 1fr 1fr;
         height: 100vh;
     }
@@ -35,7 +25,7 @@
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .hero-container {
+    .home-container {
         grid-template-columns: 1fr;
     }
 

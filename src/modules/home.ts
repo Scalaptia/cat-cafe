@@ -1,9 +1,10 @@
 import Logo from '../assets/logo.jpg';
-import '../style/hero.css';
+import '../style/home.css';
+
 
 export default function Hero() {
-    const hero = document.createElement('div');
-    hero.classList.add('hero-container')
+    const container = document.createElement('div');
+    container.classList.add('tab-container', 'home-container')
 
     const heroLeft = document.createElement('div');
     heroLeft.classList.add('hero-left');
@@ -26,8 +27,8 @@ export default function Hero() {
         heroText.innerText = 'Escape to a world of purrs and relaxation at our cat cafe.';
         heroRight.appendChild(heroText);
     
-        hero.appendChild(heroLeft);
-        hero.appendChild(heroRight);
+        container.appendChild(heroLeft);
+        container.appendChild(heroRight);
 
-    return hero
+    return container
 }
