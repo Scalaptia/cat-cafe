@@ -1,0 +1,41 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-title {
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.menu {
+    width: 80%;
+    background-color: #c9b3a1;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-container {
+    background-color: #d8c0ad;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.item-name {
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+}
+
+.item-price {
+    font-weight: 700;
+}

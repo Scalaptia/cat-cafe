@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
     --background-color: #EEE6DB;
 }
@@ -10,14 +12,9 @@ body {
 }
 
 .tab-container {
-    padding-top: 2rem;
-    display: grid;
+    padding-top: 4rem;
+    min-height: 100vh;
     background-image: url(../assets/hero-background.jpg);
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
-    justify-items: center;
 }
-
-

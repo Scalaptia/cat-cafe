@@ -1,5 +1,5 @@
-import Logo from '../assets/logo.png';
 import '../style/home.css';
+import Logo from '../assets/logo.png';
 import pageLoad from './pageLoad';
 import Menu from './menu';
 

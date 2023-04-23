@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.home-container {
+    display: grid;
+}
 
 .hero-left, .hero-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -59,6 +60,8 @@
 @media only screen and (min-width: 769px) {
     .home-container {
         grid-template-columns: 1fr 2fr;
+        justify-content: center;
+        align-items: center;
     }
 
     .logo {
@@ -70,7 +73,7 @@
     }
 
     .hero-right{
-        padding: 80px;
+        padding: 0 80px;
     }
 }
 
