@@ -1,0 +1,67 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about {
+    width: 80%;
+    background-color: #c9b3a1;
+    font-weight: 500;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section {
+    background-color: #d8c0ad;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.reservation-btn {
+    display: flex;
+    background-color: #d8c0ad;
+    font-weight: 600;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: all 0.2s ease-in-out;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.reservation-btn > img {
+    height: 1rem;
+}
+
+.reservation-btn:hover {
+    background-color: #c9b3a1;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+    .about {
+        align-items: start;
+        text-align: start;
+        margin: 50px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
+}

@@ -2,7 +2,7 @@ import '../style/navbar.css';
 import pageLoad from './pageLoad';
 import Home from './home';
 import Menu from "./menu";
-import Contact from "./contact";
+import About from "./about";
 
 const container = document.createElement('div');
 container.classList.add('nav-container');
@@ -25,7 +25,7 @@ export const NavBar = () => {
 
     ul.appendChild(createTab('Home', Home()));
     ul.appendChild(createTab('Menu', Menu()));
-    ul.appendChild(createTab('Contact', Contact()));
+    ul.appendChild(createTab('About', About()));
     navbar.appendChild(ul);
 
     container.appendChild(navbar);
@@ -49,7 +49,7 @@ export const HamburgerNavbar = () => {
     
     ul.appendChild(createTab('Home', Home()));
     ul.appendChild(createTab('Menu', Menu()));
-    ul.appendChild(createTab('Contact', Contact()));
+    ul.appendChild(createTab('About', About()));
     
     container.appendChild(hamburgerMenu);
     container.appendChild(ul);

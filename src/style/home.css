@@ -59,21 +59,24 @@
 /* Desktop */
 @media only screen and (min-width: 769px) {
     .home-container {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
+        gap: 5vw;
     }
 
     .logo {
-        width: 180%;
+        width: 100%;
     }
 
     .hero-left {
-        padding-left: 180px;
+        padding-left: 20px;
+        justify-self: end;
     }
 
     .hero-right{
-        padding: 0 80px;
+        justify-self: start;
+        padding-right: 20px;
     }
 }
 
