@@ -45,6 +45,8 @@
 
 .reservation-btn > img {
     height: 1rem;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .reservation-btn:hover {
